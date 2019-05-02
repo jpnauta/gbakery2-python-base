@@ -10,7 +10,7 @@ RUN apk -q update && \
     # Curl
     apk -q add --update curl curl-dev && \
     # OpenSSL
-    apk -q --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main add openssl openssl-dev && \
+    apk -q --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main add openssl openssl-dev py-service_identity && \
     # PostgreSQL
     apk -q --no-cache add py-psycopg2 postgresql-dev && \
     # bash
