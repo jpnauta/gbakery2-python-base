@@ -26,6 +26,10 @@ RUN apk -q update && \
     # lxml
     apk -q --no-cache add libxslt-dev libxml2-dev
 
+# Install google cloud SDK
+RUN apk -q update && \
+    curl https://sdk.cloud.google.com | bash
+
 ENV LIBRARY_PATH /lib:/usr/lib:$LIBRARY_PATH  # Pillow
 
 RUN pip install --upgrade pip
