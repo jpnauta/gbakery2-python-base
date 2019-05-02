@@ -1,4 +1,5 @@
 cryptography==2.5
+ephem==3.7.6.0
 gevent==1.4.0
 lxml==4.2.1
 M2Crypto==0.33.0
